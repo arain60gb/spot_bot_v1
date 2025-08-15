@@ -165,7 +165,7 @@ class CryptoTradingBot:
         self.sl_level = None               # dynamic SL for open position
         self.tp_level = None               # dynamic TP for open position
 
-        # new trade-logic state
+        # optional trade-logic state (kept for future rules/UI)
         self.seen_strong_follow_through = False
         self.open_signal = None
 
@@ -848,8 +848,22 @@ class CryptoTradingBot:
                 return self.historical_data["close"].iloc[idx]
         return None
 
-    # ── Signal processing (NEW LOGIC) ----------------------------------------
+    # ── Signal processing (TABLE-DRIVEN) --------------------------------------
     def _process_signal(self, rec, price, ts):
+        """
+        Apply trade actions per decision table:
+
+        Current Pos | Signal                 | Action            | Function
+        ------------|------------------------|-------------------|------------------------------
+        Flat        | Buy / Strong Buy       | Open Long         | _execute_buy()
+        Flat        | Sell / Strong Sell     | Open Short        | _execute_sell()
+        Long        | Sell / Strong Sell     | Close Long        | _execute_sell(closed_by=signal)
+        Short       | Buy / Strong Buy       | Close Short       | _execute_buy(closed_by=signal)
+        Long        | Neutral / Buy / SB     | Hold              | —
+        Short       | Neutral / Sell / SS    | Hold              | —
+
+        SL/TP exits are handled earlier and take priority.
+        """
         self.current_signal = rec or "Neutral"
         self.last_price = price
         print(f"{Colors.BOLD}[{ts}] SIGNAL: {rec}{Colors.END}")
@@ -858,37 +872,35 @@ class CryptoTradingBot:
             print(f"{Colors.YELLOW}[{ts}] Trading is disabled. Ignoring signal: {rec}{Colors.END}")
             return
 
+        rec = rec or "Neutral"
+
+        # When Flat: open positions on Buy/SB or Sell/SS
         if self.position_state == "Flat":
             if rec in ("Buy", "Strong Buy"):
-                self._execute_buy(price, ts)  # opens Long
+                self._execute_buy(price, ts)  # OPEN LONG
                 self.open_signal = rec
-                self.seen_strong_follow_through = (rec == "Strong Buy")
+                self.seen_strong_follow_through = False
             elif rec in ("Sell", "Strong Sell"):
-                self._execute_sell(price, ts)  # opens Short
+                self._execute_sell(price, ts)  # OPEN SHORT
                 self.open_signal = rec
-                self.seen_strong_follow_through = (rec == "Strong Sell")
+                self.seen_strong_follow_through = False
+            # Neutral -> Hold
             return
 
+        # When Long: close on Sell/Strong Sell; else Hold
         if self.position_state == "Long":
-            if rec == "Strong Buy":
-                self.seen_strong_follow_through = True
-                return
-            if rec == "Neutral" and self.seen_strong_follow_through:
-                self._execute_sell(price, ts, closed_by="signal:Neutral")
+            if rec in ("Sell", "Strong Sell"):
+                self._execute_sell(price, ts, closed_by=f"signal:{rec}")  # CLOSE LONG
                 self.open_signal = None
                 self.seen_strong_follow_through = False
-                return
             return
 
+        # When Short: close on Buy/Strong Buy; else Hold
         if self.position_state == "Short":
-            if rec == "Strong Sell":
-                self.seen_strong_follow_through = True
-                return
-            if rec == "Neutral" and self.seen_strong_follow_through:
-                self._execute_buy(price, ts, closed_by="signal:Neutral")
+            if rec in ("Buy", "Strong Buy"):
+                self._execute_buy(price, ts, closed_by=f"signal:{rec}")   # CLOSE SHORT
                 self.open_signal = None
                 self.seen_strong_follow_through = False
-                return
             return
 
     # ── Execution helpers -----------------------------------------------------
