@@ -337,15 +337,30 @@ class CryptoTradingBot:
         else:
             items.append(html.P("No open position.", className="mb-1", style={"color": PALETTE["muted"]}))
 
+        # Buttons row (now includes ShortTrig / LongTrig)
         items.append(
             html.Div(
                 [
-                    dbc.Button("Close Trade", id="close-button", color="danger",
-                               className="mt-2 me-2",
-                               style={"backgroundColor": PALETTE["button_bg"], "borderColor": PALETTE["button_bg"]}),
-                    dbc.Button("Start Trade", id="start-button", color="success",
-                               className="mt-2",
-                               style={"backgroundColor": PALETTE["start_button_bg"], "borderColor": PALETTE["start_button_bg"]}),
+                    dbc.Button(
+                        "Close Trade", id="close-button", color="danger",
+                        className="mt-2 me-2",
+                        style={"backgroundColor": PALETTE["button_bg"], "borderColor": PALETTE["button_bg"]}
+                    ),
+                    dbc.Button(
+                        "Start Trade", id="start-button", color="success",
+                        className="mt-2 me-2",
+                        style={"backgroundColor": PALETTE["start_button_bg"], "borderColor": PALETTE["start_button_bg"]}
+                    ),
+                    dbc.Button(
+                        "ShortTrig", id="shorttrig-button", color="warning",
+                        className="mt-2 me-2",
+                        title="Open a SELL (short) trade now, ignoring signals",
+                    ),
+                    dbc.Button(
+                        "LongTrig", id="longtrig-button", color="primary",
+                        className="mt-2",
+                        title="Open a BUY (long) trade now, ignoring signals",
+                    ),
                 ]
             )
         )
@@ -672,13 +687,18 @@ class CryptoTradingBot:
         def _update_cards(_):
             return self._build_plan_card(), self._build_position_card(), self._build_winloss_pie()
 
+        # UPDATED: handle new ShortTrig / LongTrig buttons
         @app.callback(
             Output("trades-table-wrap", "children"),
-            [Input("graph-update", "n_intervals"),
-             Input('close-button', 'n_clicks'),
-             Input('start-button', 'n_clicks')],
+            [
+                Input("graph-update", "n_intervals"),
+                Input("close-button", "n_clicks"),
+                Input("start-button", "n_clicks"),
+                Input("shorttrig-button", "n_clicks"),
+                Input("longtrig-button", "n_clicks"),
+            ],
         )
-        def _update_table_and_handle_buttons(_, close_clicks, start_clicks):
+        def _update_table_and_handle_buttons(_, close_clicks, start_clicks, shorttrig_clicks, longtrig_clicks):
             trig = ctx.triggered_id
             if trig == "close-button" and close_clicks:
                 price = self._get_price()
@@ -690,6 +710,32 @@ class CryptoTradingBot:
 
             if trig == "start-button" and start_clicks:
                 self.enable_trading()
+
+            # Manual Short trigger — open SELL immediately, regardless of signals or trading_enabled
+            if trig == "shorttrig-button" and shorttrig_clicks:
+                price = self._get_price()
+                ts = datetime.utcnow().replace(tzinfo=timezone.utc)
+                if price is not None:
+                    if self.position_state == "Flat":
+                        self._execute_sell(price, ts, closed_by="manual_shorttrig")
+                        logger.info("Manual ShortTrig executed at %.6f", price)
+                    else:
+                        logger.info("ShortTrig ignored: position not flat (%s)", self.position_state)
+                else:
+                    logger.warning("ShortTrig: no price available")
+
+            # Manual Long trigger — open BUY immediately, regardless of signals or trading_enabled
+            if trig == "longtrig-button" and longtrig_clicks:
+                price = self._get_price()
+                ts = datetime.utcnow().replace(tzinfo=timezone.utc)
+                if price is not None:
+                    if self.position_state == "Flat":
+                        self._execute_buy(price, ts, closed_by="manual_longtrig")
+                        logger.info("Manual LongTrig executed at %.6f", price)
+                    else:
+                        logger.info("LongTrig ignored: position not flat (%s)", self.position_state)
+                else:
+                    logger.warning("LongTrig: no price available")
 
             return self._build_trades_table()
 
@@ -836,10 +882,8 @@ class CryptoTradingBot:
 
     def _get_price(self):
         try:
-            if MODE == "live":
+            if MODE in ("live", "paper") and self.exchange:
                 return self.exchange.fetch_ticker(self.symbol)["last"]
-            if MODE == "paper":
-                return ccxt.binance().fetch_ticker(self.symbol)["last"]
         except Exception:
             logger.exception("Price fetch error")
         if hasattr(self, "historical_data") and not self.historical_data.empty:
@@ -1301,6 +1345,19 @@ class CryptoTradingBot:
     def _start_dash_server(self):
         if self._dash_server:
             return
+
+        # Optional: graceful shutdown endpoint to match _shutdown_dash_server()
+        @app.server.route("/_shutdown")
+        def _shutdown():
+            try:
+                from flask import request
+                func = request.environ.get('werkzeug.server.shutdown')
+                if func:
+                    func()
+            except Exception:
+                pass
+            return "Shutting down..."
+
         def run():
             self._dash_server = app.server
             logger.info("Dash server started – http://127.0.0.1:8050")
