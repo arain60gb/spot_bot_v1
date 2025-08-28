@@ -36,7 +36,7 @@ INITIAL_USDT = 10_000.0             # Paper account equity
 FIXED_ORDER_SIZE_USDT = 100.0       # ← margin per trade ($100)
 LEVERAGE = 50                       # ← 50x, ~ $5,000 notional per trade
 STOP_LOSS_PERCENT = 2.0             # ← 2% SL from entry
-TAKE_PROFIT_PERCENT = 10.0          # ← 10% TP from entry
+TAKE_PROFIT_PERCENT = 5.0          # ← 10% TP from entry
 # ── FUTURES / EXCHANGE CONFIG ────────────────────────────────────────────────
 USE_FUTURES = True
 FUTURES_EXCHANGE_ID = 'binanceusdm'  # ccxt futures exchange id
