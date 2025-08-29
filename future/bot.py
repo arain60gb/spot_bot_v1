@@ -76,6 +76,11 @@ class FuturesScalperBot:
         self.completed_trades = []; self.portfolio_history = []; self.candle_history = []
         self.strategy = TradingStrategy(symbol)
         self.exchange = None; self.symbol_ex = symbol
+
+        # --- NEW: track entry timestamp & entry fee for accurate trade records
+        self.open_ts: datetime | None = None
+        self.open_fee_quote: float = 0.0
+
         if MODE in ["paper", "live"]:
             if USE_FUTURES:
                 ctor = getattr(ccxt, FUTURES_EXCHANGE_ID)
@@ -135,6 +140,11 @@ class FuturesScalperBot:
         self.sl_level = price * (1 - STOP_LOSS_PERCENT / 100.0)
         self.tp_level = price * (1 + TAKE_PROFIT_PERCENT / 100.0) if TAKE_PROFIT_PERCENT > 0 else None
         self.manual_lock_active = bool(manual)  # lock if manual entry
+
+        # NEW: record open timestamp and entry fee
+        self.open_ts = ts
+        self.open_fee_quote = fee
+
         logger.info("OPEN LONG @ %.4f qty=%.6f notional=%.2f fee=%.4f manual=%s", price, qty, notional, fee, manual)
         self._log_event("FUTURES_OPEN_LONG", {
             "timestamp": ts.isoformat(),"price": price,"qty": qty,"notional": notional,
@@ -153,6 +163,11 @@ class FuturesScalperBot:
         self.sl_level = price * (1 + STOP_LOSS_PERCENT / 100.0)
         self.tp_level = price * (1 - TAKE_PROFIT_PERCENT / 100.0) if TAKE_PROFIT_PERCENT > 0 else None
         self.manual_lock_active = bool(manual)  # lock if manual entry
+
+        # NEW: record open timestamp and entry fee
+        self.open_ts = ts
+        self.open_fee_quote = fee
+
         logger.info("OPEN SHORT @ %.4f qty=%.6f notional=%.2f fee=%.4f manual=%s", price, qty, notional, fee, manual)
         self._log_event("FUTURES_OPEN_SHORT", {
             "timestamp": ts.isoformat(),"price": price,"qty": qty,"notional": notional,
@@ -165,14 +180,23 @@ class FuturesScalperBot:
         side = self.position_side; qty = self.qty_base; entry = self.entry_price
         notional_exit = price * qty; fee_exit = self._taker_fee_quote(notional_exit)
         pnl = self._pnl_quote(entry, price, qty, side)
+
         if MODE != "live":
             self.equity_usdt += self.margin_locked; self.equity_usdt += pnl; self.equity_usdt -= fee_exit
+
+        # Use the actual open timestamp captured at entry
+        open_timestamp_iso = (self.open_ts or ts).isoformat()
+
         self._register_completed_trade(
-            {"timestamp": ts.isoformat(),"price": entry,"amount_base": qty,
-             "sl": self.sl_level,"tp": self.tp_level,"trigger_signal": side},
+            {"timestamp": open_timestamp_iso,               # correct open timestamp
+             "price": entry,"amount_base": qty,
+             "sl": self.sl_level,"tp": self.tp_level,"trigger_signal": side,
+             "fee_open": self.open_fee_quote},             # entry fee
             {"timestamp": ts.isoformat(),"price": price,"amount_base": qty,
-             "pnl": pnl - fee_exit,"closed_by": closed_by,
-             "type": "SELL_CLOSE_LONG" if side == "Long" else "BUY_CLOSE_SHORT"}
+             "pnl": pnl - fee_exit,                        # keep your original semantics: net of close fee only
+             "closed_by": closed_by,
+             "type": "SELL_CLOSE_LONG" if side == "Long" else "BUY_CLOSE_SHORT",
+             "fee_close": fee_exit}                        # exit fee
         )
         self._log_event("FUTURES_CLOSE", {
             "timestamp": ts.isoformat(),"side": side,"price": price,"qty": qty,
@@ -182,6 +206,8 @@ class FuturesScalperBot:
         self.position_side = "Flat"; self.entry_price = None; self.qty_base = 0.0
         self.sl_level = None; self.tp_level = None; self.margin_locked = 0.0
         self.manual_lock_active = False
+        self.open_ts = None
+        self.open_fee_quote = 0.0
 
     # --- Signal engine --------------------------------------------------------
     def _check_sl_tp_on_tick(self, ts, price):
@@ -262,9 +288,16 @@ class FuturesScalperBot:
         entry_price = float(open_d.get("price"))
         with self._dash_lock:
             self.completed_trades.append({
-                "side": side,"entry_time": pd.to_datetime(open_d.get("timestamp")),"entry_price": entry_price,
-                "exit_time": pd.to_datetime(close_d.get("timestamp")),"exit_price": float(close_d.get("price")),
-                "amount": float(open_d.get("amount_base")),"pnl": float(close_d.get("pnl")),
+                "side": side,
+                "entry_time": pd.to_datetime(open_d.get("timestamp")),    # open time
+                "entry_price": entry_price,
+                "exit_time": pd.to_datetime(close_d.get("timestamp")),    # close time
+                "exit_price": float(close_d.get("price")),
+                "amount": float(open_d.get("amount_base")),
+                "pnl": float(close_d.get("pnl")),                         # net of close fee (unchanged)
+                "fee_open": float(open_d.get("fee_open", 0.0)),           # entry fee
+                "fee_close": float(close_d.get("fee_close", 0.0)),        # exit fee (for completeness; we store even though pnl is already net of it)
+                "fee_total": float(open_d.get("fee_open", 0.0)) + float(close_d.get("fee_close", 0.0)),
                 "sl": float(open_d.get("sl")) if open_d.get("sl") is not None else None,
                 "tp": float(open_d.get("tp")) if open_d.get("tp") is not None else None,
                 "open_signal": open_d.get("trigger_signal", "-"),
@@ -450,10 +483,14 @@ class FuturesScalperBot:
                 amt_base = t.get("amount"); entry_price = t.get("entry_price")
                 rows.append({
                     "Timestamp (open)": t["entry_time"].strftime("%Y-%m-%d %H:%M"),
+                    "Timestamp (close)": t["exit_time"].strftime("%Y-%m-%d %H:%M"),
                     "Side": t["side"],
                     "Entry": round(entry_price, 4) if entry_price is not None else "-",
                     "Exit": round(t.get("exit_price", np.nan), 4) if t.get("exit_price") is not None else "-",
                     "PnL": round(t.get("pnl", 0.0), 4),
+                    "Fee (open)": round(t.get("fee_open", 0.0), 6),
+                    "Fee (close)": round(t.get("fee_close", 0.0), 6),
+                    "Fee (total)": round(t.get("fee_total", 0.0), 6),
                     "Qty (base)": round(amt_base, 6) if amt_base is not None else "-",
                     "Notional (quote)": round((entry_price or 0.0) * (amt_base or 0.0), 2) if amt_base is not None else "-",
                     "SL": round(t.get("sl"), 4) if t.get("sl") is not None else "-",
@@ -461,7 +498,8 @@ class FuturesScalperBot:
                     "Open Signal": t.get("open_signal", "-"),
                     "Close Reason": t.get("close_reason", "signal"),
                 })
-        cols = ["Timestamp (open)", "Side", "Entry", "Exit", "PnL",
+        cols = ["Timestamp (open)", "Timestamp (close)", "Side", "Entry", "Exit", "PnL",
+                "Fee (open)", "Fee (close)", "Fee (total)",
                 "Qty (base)", "Notional (quote)", "SL", "TP", "Open Signal", "Close Reason"]
         return DataTable(
             id="trades-table", columns=[{"name": c, "id": c} for c in cols], data=rows,
@@ -618,10 +656,10 @@ class FuturesScalperBot:
             return "Shutting down..."
         def run():
             self._dash_server = app.server
-            logger.info("Dash server started – http://127.0.0.1:8050")
+            logger.info("Dash server started – http://38.242.221.158:8053")
             app.run(host="38.242.221.158", port=8053, debug=False, use_reloader=False)
         self._dash_thread = threading.Thread(target=run, daemon=True); self._dash_thread.start()
-        print("\nDashboard launched – open http://127.0.0.1:8050"); logger.info("Dashboard launched")
+        print("\nDashboard launched – open http://38.242.221.158:8053"); logger.info("Dashboard launched")
 
     def _shutdown_dash_server(self):
         if self._dash_server:

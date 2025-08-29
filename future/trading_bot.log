@@ -8732,3 +8732,981 @@
 2025-08-29 12:44:02 | INFO | Dashboard shutdown request sent
 2025-08-29 12:44:02 | INFO | Bot stopped
 2025-08-29 12:44:02 | INFO | Bot stopped.
+2025-08-29 17:02:56 | INFO | Logger initialised – MODE=paper – SYMBOL=TAO/USDT – Futures=True
+2025-08-29 17:03:03 | INFO | Futures fetcher using binanceusdm symbol=1000000BOB/USDT:USDT
+2025-08-29 17:03:06 | INFO | Bot initialised for TAO/USDT – mode=paper – lev=50x
+2025-08-29 17:03:06 | INFO | Loaded 25 trade records
+2025-08-29 17:03:06 | INFO | Futures Scalper – 1m/5m – TAO/USDT – 50x
+2025-08-29 17:03:06 | INFO | Dash server started – http://38.242.221.158:8053
+2025-08-29 17:03:06 | INFO | 
+2025-08-29 17:03:06 | INFO | Dashboard launched – open http://38.242.221.158:8053
+2025-08-29 17:03:06 | INFO | Dash is running on http://38.242.221.158:8053/
+
+2025-08-29 17:03:06 | INFO | Dashboard launched
+2025-08-29 17:03:06 | INFO | b" * Serving Flask app 'bot'"
+2025-08-29 17:03:06 | INFO | b' * Debug mode: off'
+2025-08-29 17:03:06 | ERROR | Cannot assign requested address
+2025-08-29 17:03:07 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:07 | ERROR | 
+2025-08-29 17:03:07 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:09 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:09 | ERROR | 
+2025-08-29 17:03:09 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:11 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:11 | ERROR | 
+2025-08-29 17:03:11 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:13 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:13 | ERROR | 
+2025-08-29 17:03:13 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:15 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:15 | ERROR | 
+2025-08-29 17:03:15 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:17 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:17 | ERROR | 
+2025-08-29 17:03:17 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:18 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:18 | ERROR | 
+2025-08-29 17:03:18 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:20 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:20 | ERROR | 
+2025-08-29 17:03:20 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:21 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:21 | ERROR | 
+2025-08-29 17:03:21 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:23 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:23 | ERROR | 
+2025-08-29 17:03:23 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:25 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:25 | ERROR | 
+2025-08-29 17:03:25 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:27 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:27 | ERROR | 
+2025-08-29 17:03:27 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:28 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:28 | ERROR | 
+2025-08-29 17:03:28 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:30 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:30 | ERROR | 
+2025-08-29 17:03:30 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:32 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:32 | ERROR | 
+2025-08-29 17:03:32 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:34 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:34 | ERROR | 
+2025-08-29 17:03:34 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:35 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:35 | ERROR | 
+2025-08-29 17:03:35 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:37 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:37 | ERROR | 
+2025-08-29 17:03:37 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:38 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:38 | ERROR | 
+2025-08-29 17:03:38 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:40 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:40 | ERROR | 
+2025-08-29 17:03:40 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:42 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:42 | ERROR | 
+2025-08-29 17:03:42 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:44 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:44 | ERROR | 
+2025-08-29 17:03:44 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:45 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:45 | ERROR | 
+2025-08-29 17:03:45 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:48 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:48 | ERROR | 
+2025-08-29 17:03:48 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:50 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:50 | ERROR | 
+2025-08-29 17:03:50 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:51 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:51 | ERROR | 
+2025-08-29 17:03:51 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:53 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:53 | ERROR | 
+2025-08-29 17:03:53 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:55 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:55 | ERROR | 
+2025-08-29 17:03:55 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:57 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:57 | ERROR | 
+2025-08-29 17:03:57 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:03:58 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:03:58 | ERROR | 
+2025-08-29 17:03:58 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:04:00 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:04:00 | ERROR | 
+2025-08-29 17:04:00 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:04:02 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:04:02 | ERROR | 
+2025-08-29 17:04:02 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:04:03 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:04:03 | ERROR | 
+2025-08-29 17:04:03 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:04:05 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:04:05 | ERROR | 
+2025-08-29 17:04:05 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:04:07 | INFO | Interrupted by user.
+2025-08-29 17:04:07 | INFO | Interrupted by user
+2025-08-29 17:04:07 | INFO | Stopping bot...
+2025-08-29 17:04:07 | ERROR | Traceback (most recent call last):
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/Desktop/spot_botv1/future/bot.py", line 702, in <module>
+2025-08-29 17:04:07 | ERROR | finally: bot.stop()
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/Desktop/spot_botv1/future/bot.py", line 692, in stop
+2025-08-29 17:04:07 | ERROR | print("Stopping bot..."); self._shutdown_dash_server(); logger.info("Bot stopped"); print("Bot stopped.")
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/Desktop/spot_botv1/future/bot.py", line 666, in _shutdown_dash_server
+2025-08-29 17:04:07 | ERROR | try: requests.get("http://38.242.221.158:8053/_shutdown", timeout=1); logger.info("Dashboard shutdown request sent")
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/anaconda3/envs/bot/lib/python3.12/site-packages/requests/api.py", line 73, in get
+2025-08-29 17:04:07 | ERROR | return request("get", url, params=params, **kwargs)
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/anaconda3/envs/bot/lib/python3.12/site-packages/requests/api.py", line 59, in request
+2025-08-29 17:04:07 | ERROR | return session.request(method=method, url=url, **kwargs)
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/anaconda3/envs/bot/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+2025-08-29 17:04:07 | ERROR | resp = self.send(prep, **send_kwargs)
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/anaconda3/envs/bot/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+2025-08-29 17:04:07 | ERROR | r = adapter.send(request, **kwargs)
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/anaconda3/envs/bot/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+2025-08-29 17:04:07 | ERROR | resp = conn.urlopen(
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/anaconda3/envs/bot/lib/python3.12/site-packages/urllib3/connectionpool.py", line 787, in urlopen
+2025-08-29 17:04:07 | ERROR | response = self._make_request(
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/anaconda3/envs/bot/lib/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+2025-08-29 17:04:07 | ERROR | response = conn.getresponse()
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/anaconda3/envs/bot/lib/python3.12/site-packages/urllib3/connection.py", line 565, in getresponse
+2025-08-29 17:04:07 | ERROR | httplib_response = super().getresponse()
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/anaconda3/envs/bot/lib/python3.12/http/client.py", line 1430, in getresponse
+2025-08-29 17:04:07 | ERROR | response.begin()
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/anaconda3/envs/bot/lib/python3.12/http/client.py", line 331, in begin
+2025-08-29 17:04:07 | ERROR | version, status, reason = self._read_status()
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/anaconda3/envs/bot/lib/python3.12/http/client.py", line 292, in _read_status
+2025-08-29 17:04:07 | ERROR | line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR |   File "/home/kali/anaconda3/envs/bot/lib/python3.12/socket.py", line 720, in readinto
+2025-08-29 17:04:07 | ERROR | return self._sock.recv_into(b)
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | ^
+2025-08-29 17:04:07 | ERROR | KeyboardInterrupt
+2025-08-29 17:05:52 | INFO | Logger initialised – MODE=paper – SYMBOL=TAO/USDT – Futures=True
+2025-08-29 17:05:54 | INFO | Futures fetcher using binanceusdm symbol=1000000BOB/USDT:USDT
+2025-08-29 17:05:56 | INFO | Bot initialised for TAO/USDT – mode=paper – lev=50x
+2025-08-29 17:05:56 | INFO | Loaded 25 trade records
+2025-08-29 17:05:56 | INFO | Futures Scalper – 1m/5m – TAO/USDT – 50x
+2025-08-29 17:05:56 | INFO | Dash server started – http://38.242.221.158:8053
+2025-08-29 17:05:56 | INFO | 
+2025-08-29 17:05:56 | INFO | Dash is running on http://127.0.0.1:8053/
+
+2025-08-29 17:05:56 | INFO | Dashboard launched – open http://38.242.221.158:8053
+2025-08-29 17:05:56 | INFO | Dashboard launched
+2025-08-29 17:05:56 | INFO | b" * Serving Flask app 'bot'"
+2025-08-29 17:05:56 | INFO | b' * Debug mode: off'
+2025-08-29 17:05:56 | INFO | WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8053
+2025-08-29 17:05:56 | INFO | Press CTRL+C to quit
+2025-08-29 17:05:56 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:05:56 | ERROR | 
+2025-08-29 17:05:56 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:05:58 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:05:58 | ERROR | 
+2025-08-29 17:05:58 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:00 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:00 | ERROR | 
+2025-08-29 17:06:00 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:02 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:02 | ERROR | 
+2025-08-29 17:06:02 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:03 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:03 | ERROR | 
+2025-08-29 17:06:03 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:05 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:05 | ERROR | 
+2025-08-29 17:06:05 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:07 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:07 | ERROR | 
+2025-08-29 17:06:07 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:08 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:08 | ERROR | 
+2025-08-29 17:06:08 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:10 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:10 | ERROR | 
+2025-08-29 17:06:10 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:12 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:12 | ERROR | 
+2025-08-29 17:06:12 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:13 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:13 | ERROR | 
+2025-08-29 17:06:13 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:15 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:15 | ERROR | 
+2025-08-29 17:06:15 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:17 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:17 | ERROR | 
+2025-08-29 17:06:17 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:18 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:18 | ERROR | 
+2025-08-29 17:06:18 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:20 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:20 | ERROR | 
+2025-08-29 17:06:20 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:22 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:22 | ERROR | 
+2025-08-29 17:06:22 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET / HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_dash-component-suites/dash/deps/react-dom@18.v3_2_0m1754744598.3.1.min.js HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_dash-component-suites/dash/deps/polyfill@7.v3_2_0m1754744598.12.1.min.js HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_dash-component-suites/dash/deps/react@18.v3_2_0m1754744598.3.1.min.js HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_dash-component-suites/dash/deps/prop-types@15.v3_2_0m1754744598.8.1.min.js HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_dash-component-suites/dash_bootstrap_components/_components/dash_bootstrap_components.v2_0_3m1754836491.min.js HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_dash-component-suites/dash/dash-renderer/build/dash_renderer.v3_2_0m1754744598.min.js HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_dash-component-suites/dash/dcc/dash_core_components-shared.v3_2_0m1754744598.js HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_dash-component-suites/dash/dcc/dash_core_components.v3_2_0m1754744598.js HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_dash-component-suites/dash/html/dash_html_components.v3_0_4m1754744598.min.js HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_dash-component-suites/dash/dash_table/bundle.v6_0_4m1754744598.js HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_dash-dependencies HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_dash-layout HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_favicon.ico?v=3.2.0 HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_dash-component-suites/dash/dcc/async-graph.js HTTP/1.1" 200 -
+2025-08-29 17:06:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:22] "GET /_dash-component-suites/plotly/package_data/plotly.min.js HTTP/1.1" 200 -
+2025-08-29 17:06:23 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:23 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:23 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:23 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:23] "GET /_dash-component-suites/dash/dash_table/async-highlight.js HTTP/1.1" 200 -
+2025-08-29 17:06:23 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:23] "GET /_dash-component-suites/dash/dash_table/async-table.js HTTP/1.1" 200 -
+2025-08-29 17:06:23 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:23 | ERROR | 
+2025-08-29 17:06:23 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:23 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:23 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:23 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:23 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:25 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:25 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:25 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:25 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:25 | ERROR | 
+2025-08-29 17:06:25 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:25 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:26 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:26 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:26 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:26 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:26] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:26 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:26 | ERROR | 
+2025-08-29 17:06:26 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:27 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:27 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:27 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:27 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:27] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:28 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:28 | ERROR | 
+2025-08-29 17:06:28 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:28 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:28 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:28 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:28 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:28] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:29 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:29 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:29 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:29] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:30 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:30 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:30 | ERROR | 
+2025-08-29 17:06:30 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:30 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:590: DeprecationWarning:
+2025-08-29 17:06:30 | ERROR | 
+2025-08-29 17:06:30 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:30 | INFO | OPEN SHORT @ 320.4600 qty=15.602571 notional=5000.00 fee=2.0000 manual=True
+2025-08-29 17:06:30 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:281: DeprecationWarning:
+2025-08-29 17:06:30 | ERROR | 
+2025-08-29 17:06:30 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:30 | INFO | [2025-08-29T12:06:30.622288+00:00] FUTURES_OPEN_SHORT: {'timestamp': '2025-08-29T12:06:30.622288+00:00', 'price': 320.46, 'qty': 15.602571303750858, 'notional': 5000.0, 'fee_quote': 2.0, 'sl': 326.8692, 'tp': 304.43699999999995, 'trigger': 'manual_short', 'manual': True}
+2025-08-29 17:06:30 | INFO | Trade event – FUTURES_OPEN_SHORT – {'timestamp': '2025-08-29T12:06:30.622288+00:00', 'price': 320.46, 'qty': 15.602571303750858, 'notional': 5000.0, 'fee_quote': 2.0, 'sl': 326.8692, 'tp': 304.43699999999995, 'trigger': 'manual_short', 'manual': True}
+2025-08-29 17:06:30 | INFO | Manual SHORT opened; signals cannot flip/close until manual close (SL/TP still active).
+2025-08-29 17:06:30 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:30] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:31 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:31 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:31 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:31 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:31] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:31 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:31 | ERROR | 
+2025-08-29 17:06:31 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:32 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:32 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:32 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:32 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:32] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:33 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:33 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:33 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:33 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:33 | ERROR | 
+2025-08-29 17:06:33 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:33 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:33] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:34 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:34 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:34 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:34 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:34] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:35 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:35 | ERROR | 
+2025-08-29 17:06:35 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:35 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:35 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:35 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:35 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:35] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:36 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:36 | ERROR | 
+2025-08-29 17:06:36 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:37 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:37 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:37 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:37 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:37] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:38 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:38 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:38 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:38 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:38] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:38 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:38 | ERROR | 
+2025-08-29 17:06:38 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:39 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:39] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:39 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:39] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:39 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:39] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:39 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:39] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:40 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:40 | ERROR | 
+2025-08-29 17:06:40 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:40 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:576: DeprecationWarning:
+2025-08-29 17:06:40 | ERROR | 
+2025-08-29 17:06:40 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:40 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:281: DeprecationWarning:
+2025-08-29 17:06:40 | ERROR | 
+2025-08-29 17:06:40 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:40 | INFO | [2025-08-29T12:06:40.447384+00:00] FUTURES_CLOSE: {'timestamp': '2025-08-29T12:06:40.447384+00:00', 'side': 'Short', 'price': 320.56, 'qty': 15.602571303750858, 'pnl': -1.5602571303754407, 'fee_quote': 2.00062410285215, 'closed_by': 'Manual Close'}
+2025-08-29 17:06:40 | INFO | Trade event – FUTURES_CLOSE – {'timestamp': '2025-08-29T12:06:40.447384+00:00', 'side': 'Short', 'price': 320.56, 'qty': 15.602571303750858, 'pnl': -1.5602571303754407, 'fee_quote': 2.00062410285215, 'closed_by': 'Manual Close'}
+2025-08-29 17:06:40 | INFO | Manual Close pressed: trade closed (if any) and auto-trading is now PAUSED.
+2025-08-29 17:06:40 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:40 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:40 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:40 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:40 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:40] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:41 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:41 | ERROR | 
+2025-08-29 17:06:41 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:41 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:41] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:41 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:41] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:41 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:41] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:41 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:41] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:43 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:43 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:43 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:43 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:43 | ERROR | 
+2025-08-29 17:06:43 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:43 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:43] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:44 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:44 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:44 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:44 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:44] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:44 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:44 | ERROR | 
+2025-08-29 17:06:44 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:45 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:45 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:45 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:45 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:45] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:46 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:46 | ERROR | 
+2025-08-29 17:06:46 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:46 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:46 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:46 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:46 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:46] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:47 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:47 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:47 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:47 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:47] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:48 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:48 | ERROR | 
+2025-08-29 17:06:48 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:49 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:49 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:49 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:49 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:49] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:49 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:49 | ERROR | 
+2025-08-29 17:06:49 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:50 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:50 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:50 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:50 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:50] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:51 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:51 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:51 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:51 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:51 | ERROR | 
+2025-08-29 17:06:51 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:51 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:51] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:52 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:52 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:52 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:52 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:52] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:53 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:53 | ERROR | 
+2025-08-29 17:06:53 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:53 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:53 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:53 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:53 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:53] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:54 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:54 | ERROR | 
+2025-08-29 17:06:54 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:55 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:55 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:55 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:55 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:55] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:56 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:56 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:56 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:56 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:56] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:56 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:56 | ERROR | 
+2025-08-29 17:06:56 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:57 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:57 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:57 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:57 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:57] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:58 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:58 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:58 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:58 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:58] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:58 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:06:58 | ERROR | 
+2025-08-29 17:06:58 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:06:59 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:59 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:06:59 | INFO | 127.0.0.1 - - [29/Aug/2025 17:06:59] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:00 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:00] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:00 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:00 | ERROR | 
+2025-08-29 17:07:00 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:01 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:01 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:01 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:01 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:01] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:02 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:02 | ERROR | 
+2025-08-29 17:07:02 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:02 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:02 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:02 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:02 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:02] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:03 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:03 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:03 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:03 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:03] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:03 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:03 | ERROR | 
+2025-08-29 17:07:03 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:04 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:04 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:04 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:04 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:04] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:05 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:05 | ERROR | 
+2025-08-29 17:07:05 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:05 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:05 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:05 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:05 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:05] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:06 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:06 | ERROR | 
+2025-08-29 17:07:06 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:07 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:07 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:07 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:07 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:07] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:08 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:08 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:08 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:08 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:08] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:08 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:08 | ERROR | 
+2025-08-29 17:07:08 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:09 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:09 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:09 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:09 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:09] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:10 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:10 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:10 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:10 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:10] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:10 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:10 | ERROR | 
+2025-08-29 17:07:10 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:11 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:11 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:11 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:11] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:12 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:12] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:12 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:12 | ERROR | 
+2025-08-29 17:07:12 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:13 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:13 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:13 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:13 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:13] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:14 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:14 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:14 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:14 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:14] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:14 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:14 | ERROR | 
+2025-08-29 17:07:14 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:15 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:15 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:15 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:15 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:15] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:16 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:16 | ERROR | 
+2025-08-29 17:07:16 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:16 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:16 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:16 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:16 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:16] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:17 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:17 | ERROR | 
+2025-08-29 17:07:17 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:17 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:17 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:17 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:17 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:17] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:19 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:19 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:19 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:19 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:19] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:19 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:19 | ERROR | 
+2025-08-29 17:07:19 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:20 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:20 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:20 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:20 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:20] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:21 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:21 | ERROR | 
+2025-08-29 17:07:21 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:21 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:21 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:21 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:21 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:21] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:22 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:22] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:22 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:22 | ERROR | 
+2025-08-29 17:07:22 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:23 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:23 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:23 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:23 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:23] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:24 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:24] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:24 | ERROR | /home/kali/Desktop/spot_botv1/future/bot.py:676: DeprecationWarning:
+2025-08-29 17:07:24 | ERROR | 
+2025-08-29 17:07:24 | ERROR | datetime.datetime.utcnow() is deprecated and scheduled for removal in a future version. Use timezone-aware objects to represent datetimes in UTC: datetime.datetime.now(datetime.UTC).
+2025-08-29 17:07:25 | INFO | Interrupted by user.
+2025-08-29 17:07:25 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:25 | INFO | Interrupted by user
+2025-08-29 17:07:25 | INFO | Stopping bot...
+2025-08-29 17:07:25 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:25 | INFO | 127.0.0.1 - - [29/Aug/2025 17:07:25] "POST /_dash-update-component HTTP/1.1" 200 -
+2025-08-29 17:07:25 | INFO | Bot stopped
+2025-08-29 17:07:25 | INFO | Bot stopped.

@@ -341,5 +341,33 @@
             "fee_quote": 2.00024833923139,
             "closed_by": "Manual Close"
         }
+    },
+    {
+        "timestamp": "2025-08-29T12:06:30.622288+00:00",
+        "event": "FUTURES_OPEN_SHORT",
+        "details": {
+            "timestamp": "2025-08-29T12:06:30.622288+00:00",
+            "price": 320.46,
+            "qty": 15.602571303750858,
+            "notional": 5000.0,
+            "fee_quote": 2.0,
+            "sl": 326.8692,
+            "tp": 304.43699999999995,
+            "trigger": "manual_short",
+            "manual": true
+        }
+    },
+    {
+        "timestamp": "2025-08-29T12:06:40.447384+00:00",
+        "event": "FUTURES_CLOSE",
+        "details": {
+            "timestamp": "2025-08-29T12:06:40.447384+00:00",
+            "side": "Short",
+            "price": 320.56,
+            "qty": 15.602571303750858,
+            "pnl": -1.5602571303754407,
+            "fee_quote": 2.00062410285215,
+            "closed_by": "Manual Close"
+        }
     }
 ]
