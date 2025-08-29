@@ -53,5 +53,181 @@
             "tp": 293.40000000000003,
             "trigger": "quick_1m_5m"
         }
+    },
+    {
+        "timestamp": "2025-08-29T07:08:06.353324+00:00",
+        "event": "FUTURES_OPEN_SHORT",
+        "details": {
+            "timestamp": "2025-08-29T07:08:06.353324+00:00",
+            "price": 325.15,
+            "qty": 15.377518068583731,
+            "notional": 5000.0,
+            "fee_quote": 2.0,
+            "sl": 331.65299999999996,
+            "tp": 308.8925,
+            "trigger": "quick_1m_5m"
+        }
+    },
+    {
+        "timestamp": "2025-08-29T07:08:16.070967+00:00",
+        "event": "FUTURES_CLOSE",
+        "details": {
+            "timestamp": "2025-08-29T07:08:16.070967+00:00",
+            "side": "Short",
+            "price": 325.11,
+            "qty": 15.377518068583731,
+            "pnl": 0.6151007227427898,
+            "fee_quote": 1.999753959710903,
+            "closed_by": "Manual Close"
+        }
+    },
+    {
+        "timestamp": "2025-08-29T07:08:21.294339+00:00",
+        "event": "FUTURES_OPEN_SHORT",
+        "details": {
+            "timestamp": "2025-08-29T07:08:21.294339+00:00",
+            "price": 325.0,
+            "qty": 15.384615384615385,
+            "notional": 5000.0,
+            "fee_quote": 2.0,
+            "sl": 331.5,
+            "tp": 308.75,
+            "trigger": "quick_1m_5m"
+        }
+    },
+    {
+        "timestamp": "2025-08-29T07:08:29.593474+00:00",
+        "event": "FUTURES_CLOSE",
+        "details": {
+            "timestamp": "2025-08-29T07:08:29.593474+00:00",
+            "side": "Short",
+            "price": 324.95,
+            "qty": 15.384615384615385,
+            "pnl": 0.7692307692309441,
+            "fee_quote": 1.9996923076923079,
+            "closed_by": "Manual Close"
+        }
+    },
+    {
+        "timestamp": "2025-08-29T07:08:32.595848+00:00",
+        "event": "FUTURES_OPEN_LONG",
+        "details": {
+            "timestamp": "2025-08-29T07:08:32.595848+00:00",
+            "price": 324.91,
+            "qty": 15.388876919762394,
+            "notional": 5000.0,
+            "fee_quote": 2.0,
+            "sl": 318.4118,
+            "tp": 341.1555,
+            "trigger": "manual_long"
+        }
+    },
+    {
+        "timestamp": "2025-08-29T07:08:33.170659+00:00",
+        "event": "FUTURES_CLOSE",
+        "details": {
+            "timestamp": "2025-08-29T07:08:33.170659+00:00",
+            "side": "Long",
+            "price": 324.91,
+            "qty": 15.388876919762394,
+            "pnl": 0.0,
+            "fee_quote": 2.0,
+            "closed_by": "signal:flip_to_short"
+        }
+    },
+    {
+        "timestamp": "2025-08-29T07:08:33.170659+00:00",
+        "event": "FUTURES_OPEN_SHORT",
+        "details": {
+            "timestamp": "2025-08-29T07:08:33.170659+00:00",
+            "price": 324.91,
+            "qty": 15.388876919762394,
+            "notional": 5000.0,
+            "fee_quote": 2.0,
+            "sl": 331.4082,
+            "tp": 308.66450000000003,
+            "trigger": "flip"
+        }
+    },
+    {
+        "timestamp": "2025-08-29T07:08:54.630484+00:00",
+        "event": "FUTURES_CLOSE",
+        "details": {
+            "timestamp": "2025-08-29T07:08:54.630484+00:00",
+            "side": "Short",
+            "price": 324.99,
+            "qty": 15.388876919762394,
+            "pnl": -1.2311101535807465,
+            "fee_quote": 2.0004924440614325,
+            "closed_by": "Manual Close"
+        }
+    },
+    {
+        "timestamp": "2025-08-29T07:08:57.694291+00:00",
+        "event": "FUTURES_OPEN_SHORT",
+        "details": {
+            "timestamp": "2025-08-29T07:08:57.694291+00:00",
+            "price": 324.99,
+            "qty": 15.385088771962213,
+            "notional": 5000.0,
+            "fee_quote": 2.0,
+            "sl": 331.4898,
+            "tp": 308.7405,
+            "trigger": "manual_short"
+        }
+    },
+    {
+        "timestamp": "2025-08-29T07:09:40.580952+00:00",
+        "event": "FUTURES_CLOSE",
+        "details": {
+            "timestamp": "2025-08-29T07:09:40.580952+00:00",
+            "side": "Short",
+            "price": 324.92,
+            "qty": 15.385088771962213,
+            "pnl": 1.07695621403725,
+            "fee_quote": 1.999569217514385,
+            "closed_by": "Manual Close"
+        }
+    },
+    {
+        "timestamp": "2025-08-29T07:09:47.773587+00:00",
+        "event": "FUTURES_OPEN_SHORT",
+        "details": {
+            "timestamp": "2025-08-29T07:09:47.773587+00:00",
+            "price": 325.06,
+            "qty": 15.381775672183597,
+            "notional": 5000.0,
+            "fee_quote": 2.0,
+            "sl": 331.5612,
+            "tp": 308.80699999999996,
+            "trigger": "quick_1m_5m"
+        }
+    },
+    {
+        "timestamp": "2025-08-29T07:09:57.322906+00:00",
+        "event": "FUTURES_CLOSE",
+        "details": {
+            "timestamp": "2025-08-29T07:09:57.322906+00:00",
+            "side": "Short",
+            "price": 325.02,
+            "qty": 15.381775672183597,
+            "pnl": 0.6152710268876587,
+            "fee_quote": 1.999753891589245,
+            "closed_by": "Manual Close"
+        }
+    },
+    {
+        "timestamp": "2025-08-29T07:10:30.467933+00:00",
+        "event": "FUTURES_OPEN_LONG",
+        "details": {
+            "timestamp": "2025-08-29T07:10:30.467933+00:00",
+            "price": 325.57,
+            "qty": 15.357680375956017,
+            "notional": 5000.0,
+            "fee_quote": 2.0,
+            "sl": 319.0586,
+            "tp": 341.8485,
+            "trigger": "manual_long"
+        }
     }
 ]
