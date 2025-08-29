@@ -70,7 +70,9 @@ class FuturesScalperBot:
         self.equity_usdt = INITIAL_USDT; self.margin_locked = 0.0
         self.position_side = "Flat"; self.entry_price = None; self.qty_base = 0.0
         self.sl_level = None; self.tp_level = None
-        self.trading_enabled = True; self.last_price = None; self.current_signal = "Neutral"
+        self.trading_enabled = True                     # governs auto entries when FLAT
+        self.manual_lock_active = False                 # when True, signals CANNOT close/flip; requires manual close
+        self.last_price = None; self.current_signal = "Neutral"
         self.completed_trades = []; self.portfolio_history = []; self.candle_history = []
         self.strategy = TradingStrategy(symbol)
         self.exchange = None; self.symbol_ex = symbol
@@ -121,7 +123,8 @@ class FuturesScalperBot:
         except Exception: logger.exception("Price fetch error")
         return None
 
-    def _open_long(self, price, ts, trigger="signal"):
+    # --- OPEN/CLOSE with manual flag -----------------------------------------
+    def _open_long(self, price, ts, trigger="signal", manual: bool=False):
         if self.position_side != "Flat": return
         qty, notional = self._qty_for_price(price); fee = self._taker_fee_quote(notional)
         margin = notional / self.leverage
@@ -131,13 +134,15 @@ class FuturesScalperBot:
         self.position_side = "Long"; self.entry_price = price; self.qty_base = qty
         self.sl_level = price * (1 - STOP_LOSS_PERCENT / 100.0)
         self.tp_level = price * (1 + TAKE_PROFIT_PERCENT / 100.0) if TAKE_PROFIT_PERCENT > 0 else None
-        logger.info("OPEN LONG @ %.4f qty=%.6f notional=%.2f fee=%.4f", price, qty, notional, fee)
+        self.manual_lock_active = bool(manual)  # lock if manual entry
+        logger.info("OPEN LONG @ %.4f qty=%.6f notional=%.2f fee=%.4f manual=%s", price, qty, notional, fee, manual)
         self._log_event("FUTURES_OPEN_LONG", {
             "timestamp": ts.isoformat(),"price": price,"qty": qty,"notional": notional,
-            "fee_quote": fee,"sl": self.sl_level,"tp": self.tp_level,"trigger": trigger
+            "fee_quote": fee,"sl": self.sl_level,"tp": self.tp_level,"trigger": trigger,
+            "manual": manual
         })
 
-    def _open_short(self, price, ts, trigger="signal"):
+    def _open_short(self, price, ts, trigger="signal", manual: bool=False):
         if self.position_side != "Flat": return
         qty, notional = self._qty_for_price(price); fee = self._taker_fee_quote(notional)
         margin = notional / self.leverage
@@ -147,10 +152,12 @@ class FuturesScalperBot:
         self.position_side = "Short"; self.entry_price = price; self.qty_base = qty
         self.sl_level = price * (1 + STOP_LOSS_PERCENT / 100.0)
         self.tp_level = price * (1 - TAKE_PROFIT_PERCENT / 100.0) if TAKE_PROFIT_PERCENT > 0 else None
-        logger.info("OPEN SHORT @ %.4f qty=%.6f notional=%.2f fee=%.4f", price, qty, notional, fee)
+        self.manual_lock_active = bool(manual)  # lock if manual entry
+        logger.info("OPEN SHORT @ %.4f qty=%.6f notional=%.2f fee=%.4f manual=%s", price, qty, notional, fee, manual)
         self._log_event("FUTURES_OPEN_SHORT", {
             "timestamp": ts.isoformat(),"price": price,"qty": qty,"notional": notional,
-            "fee_quote": fee,"sl": self.sl_level,"tp": self.tp_level,"trigger": trigger
+            "fee_quote": fee,"sl": self.sl_level,"tp": self.tp_level,"trigger": trigger,
+            "manual": manual
         })
 
     def _close_position(self, price, ts, closed_by="signal"):
@@ -171,9 +178,12 @@ class FuturesScalperBot:
             "timestamp": ts.isoformat(),"side": side,"price": price,"qty": qty,
             "pnl": pnl,"fee_quote": fee_exit,"closed_by": closed_by
         })
+        # Reset position state; manual lock is cleared when position is no longer open
         self.position_side = "Flat"; self.entry_price = None; self.qty_base = 0.0
         self.sl_level = None; self.tp_level = None; self.margin_locked = 0.0
+        self.manual_lock_active = False
 
+    # --- Signal engine --------------------------------------------------------
     def _check_sl_tp_on_tick(self, ts, price):
         if self.position_side == "Flat" or self.entry_price is None: return False
         if self.position_side == "Long":
@@ -185,17 +195,36 @@ class FuturesScalperBot:
         return False
 
     def _process_quick_signal(self, quick_sig, price, ts):
+        """
+        - If manual_lock_active: DO NOT flip or close based on signals. Hold until manual close (SL/TP still apply).
+        - If not manual_lock_active:
+            • When FLAT: only open if trading_enabled.
+            • When IN POSITION: allow signal-based flips as before.
+        """
         rec = quick_sig.signal or "Neutral"; self.current_signal = rec; self.last_price = price
-        if not self.trading_enabled: return
-        if self.position_side == "Flat":
-            if rec == "Buy": self._open_long(price, ts, trigger="quick_1m_5m")
-            if rec == "Sell": self._open_short(price, ts, trigger="quick_1m_5m")
-            return
-        if self.position_side == "Long" and rec == "Sell":
-            self._close_position(price, ts, closed_by="signal:flip_to_short"); self._open_short(price, ts, trigger="flip"); return
-        if self.position_side == "Short" and rec == "Buy":
-            self._close_position(price, ts, closed_by="signal:flip_to_long"); self._open_long(price, ts, trigger="flip"); return
 
+        # Manual lock: ignore signal-based exits/flip logic entirely
+        if self.manual_lock_active:
+            return
+
+        # Normal mode
+        if not self.trading_enabled:
+            # No auto-entries when flat
+            if self.position_side == "Flat":
+                return
+
+        if self.position_side == "Flat":
+            if rec == "Buy": self._open_long(price, ts, trigger="quick_1m_5m", manual=False)
+            if rec == "Sell": self._open_short(price, ts, trigger="quick_1m_5m", manual=False)
+            return
+
+        # In-position & not manual-locked: allow flips
+        if self.position_side == "Long" and rec == "Sell":
+            self._close_position(price, ts, closed_by="signal:flip_to_short"); self._open_short(price, ts, trigger="flip", manual=False); return
+        if self.position_side == "Short" and rec == "Buy":
+            self._close_position(price, ts, closed_by="signal:flip_to_long"); self._open_long(price, ts, trigger="flip", manual=False); return
+
+    # --- Persistence ----------------------------------------------------------
     def _get_trade_history_file(self):
         if TRADE_HISTORY_FILE: p = Path(TRADE_HISTORY_FILE)
         else: p = Path(f"trade_history_{self.symbol_ex.replace('/', '_')}_{MODE}.json")
@@ -242,6 +271,7 @@ class FuturesScalperBot:
                 "close_reason": close_d.get("closed_by", "signal"),
             })
 
+    # --- UI helpers -----------------------------------------------------------
     def _signal_pill(self, rec: str):
         rec = rec or "Neutral"
         cmap = {"Strong Buy": ("#065f46","#ecfdf5"),"Buy":("#15803d","#ecfdf5"),"Neutral":("#374151","#f3f4f6"),
@@ -260,7 +290,6 @@ class FuturesScalperBot:
     def _build_plan_card(self):
         with self._dash_lock:
             pricepill = self._price_pill(self.last_price); pill = self._signal_pill(self.current_signal)
-        # FIX: read the correct last_snapshot (no .quick)
         snap = {}
         try: snap = self.strategy.quick.last_snapshot or {}
         except Exception: snap = {}
@@ -450,6 +479,7 @@ class FuturesScalperBot:
             page_size=100,
         )
 
+    # --- Dash layout & callbacks ---------------------------------------------
     def _setup_dashboard(self):
         self.trade_history = self._load_trade_history()
         app.bot_instance = self
@@ -497,45 +527,44 @@ class FuturesScalperBot:
                        Input("longtrig-button", "n_clicks")])
         def _update_table_and_handle_buttons(_, close_clicks, start_clicks, shorttrig_clicks, longtrig_clicks):
             """
-            Behavior:
-            - If a position is closed via the 'Close Trade' button, pause auto-trading (no new signal-based entries).
-            - Auto-trading resumes ONLY when 'Start Trade', 'LongTrig', or 'ShortTrig' is pressed.
-            - SL/TP and signal-based closes do not change trading_enabled (normal behavior).
+            New behavior:
+              • 'Close Trade' closes (if any) AND pauses auto-entries until Start/LongTrig/ShortTrig.
+              • LongTrig/ShortTrig open MANUAL positions (no signal-based flips/closes) and resume trading_enabled=True.
+              • Start Trade only resumes auto-entries when flat; it does not override manual lock if position is open.
             """
             trig = ctx.triggered_id
 
             if trig == "close-button" and close_clicks:
-                price = self._get_price()
-                ts = datetime.utcnow().replace(tzinfo=timezone.utc)
-                manual_closed = False
-                # Only treat as "closed by button" if there was actually a position and we closed it
+                price = self._get_price(); ts = datetime.utcnow().replace(tzinfo=timezone.utc)
                 if self.position_side != "Flat" and price is not None:
                     self._close_position(price, ts, closed_by="Manual Close")
-                    manual_closed = True
-                if manual_closed:
-                    self.trading_enabled = False
-                    logger.info("Manual Close pressed: trade closed and auto-trading is now PAUSED.")
+                # Pause after manual close; also ensure manual lock is off
+                self.trading_enabled = False
+                self.manual_lock_active = False
+                logger.info("Manual Close pressed: trade closed (if any) and auto-trading is now PAUSED.")
 
             if trig == "start-button" and start_clicks:
+                # Only resume auto entries. If a manual position is open, manual lock still blocks signal flips.
                 self.trading_enabled = True
-                logger.info("Trading enabled via Start Trade button (auto entries allowed).")
+                logger.info("Trading enabled via Start Trade button (auto entries allowed when flat).")
 
             if trig == "shorttrig-button" and shorttrig_clicks:
                 price = self._get_price(); ts = datetime.utcnow().replace(tzinfo=timezone.utc)
                 if price is not None and self.position_side == "Flat":
-                    self.trading_enabled = True  # resume on manual trigger
-                    logger.info("Resuming auto-trading due to ShortTrig.")
-                    self._open_short(price, ts, trigger="manual_short")
+                    self.trading_enabled = True  # resume
+                    self._open_short(price, ts, trigger="manual_short", manual=True)
+                    logger.info("Manual SHORT opened; signals cannot flip/close until manual close (SL/TP still active).")
 
             if trig == "longtrig-button" and longtrig_clicks:
                 price = self._get_price(); ts = datetime.utcnow().replace(tzinfo=timezone.utc)
                 if price is not None and self.position_side == "Flat":
-                    self.trading_enabled = True  # resume on manual trigger
-                    logger.info("Resuming auto-trading due to LongTrig.")
-                    self._open_long(price, ts, trigger="manual_long")
+                    self.trading_enabled = True  # resume
+                    self._open_long(price, ts, trigger="manual_long", manual=True)
+                    logger.info("Manual LONG opened; signals cannot flip/close until manual close (SL/TP still active).")
 
             return self._build_trades_table()
 
+    # --- Time utils & data feed ----------------------------------------------
     @staticmethod
     def _tf_seconds(tf: str) -> int:
         if tf.endswith("m"): return int(tf[:-1]) * 60
@@ -576,6 +605,7 @@ class FuturesScalperBot:
                 if price > last["high"]: last["high"] = price
                 if price < last["low"]:  last["low"]  = price
 
+    # --- Runner ---------------------------------------------------------------
     def _start_dash_server(self):
         if self._dash_server: return
         @app.server.route("/_shutdown")
