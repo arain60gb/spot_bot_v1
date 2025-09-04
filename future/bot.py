@@ -656,14 +656,14 @@ class FuturesScalperBot:
             return "Shutting down..."
         def run():
             self._dash_server = app.server
-            logger.info("Dash server started – http://38.242.221.158:8053")
-            app.run(host="38.242.221.158", port=8053, debug=False, use_reloader=False)
+            logger.info("Dash server started – http://127.0.0.0:8053")
+            app.run(host="127.0.0.0", port=8053, debug=False, use_reloader=False)
         self._dash_thread = threading.Thread(target=run, daemon=True); self._dash_thread.start()
-        print("\nDashboard launched – open http://38.242.221.158:8053"); logger.info("Dashboard launched")
+        print("\nDashboard launched – open http://0.0.0.0:8053"); logger.info("Dashboard launched")
 
     def _shutdown_dash_server(self):
         if self._dash_server:
-            try: requests.get("http://38.242.221.158:8053/_shutdown", timeout=1); logger.info("Dashboard shutdown request sent")
+            try: requests.get("http://127.0.0.0:8053/_shutdown", timeout=1); logger.info("Dashboard shutdown request sent")
             except Exception: logger.debug("Dashboard shutdown endpoint not available")
             finally: self._dash_server = None
 
